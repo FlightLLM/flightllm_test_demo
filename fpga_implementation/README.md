@@ -37,7 +37,7 @@ This demo requires a computer with a U280. Ensure that your system has a U280 me
 
 ## Usage
 ```plaintext
-cd fpga_implementation
+cd fpga_implementation  && chmod +x host/fpgaHost
 host/fpgaHost <xclbin_path> <case_path>
 
 For example:
@@ -49,12 +49,12 @@ case/token_64_single_layer contains instruction files, input files and golden fi
 
 After the demo completes its run, it will compare output with the golden file:
 
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch00.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch04.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch08.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch12.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch16.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch20.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch24.rtl.bin, TEST OK
-[DEBUG] [2023-12-09 16:36:40] COMPARE WITH case/token_64_single_layer/output/output.ch28.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_0.bin COMPARE WITH case/token_64_single_layer/output/output.ch00.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_1.bin COMPARE WITH case/token_64_single_layer/output/output.ch04.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_2.bin COMPARE WITH case/token_64_single_layer/output/output.ch08.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_3.bin COMPARE WITH case/token_64_single_layer/output/output.ch12.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_4.bin COMPARE WITH case/token_64_single_layer/output/output.ch16.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_5.bin COMPARE WITH case/token_64_single_layer/output/output.ch20.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_6.bin COMPARE WITH case/token_64_single_layer/output/output.ch24.rtl.bin, TEST OK
+[DEBUG] [2023-12-09 16:36:40] ./output_7.bin COMPARE WITH case/token_64_single_layer/output/output.ch28.rtl.bin, TEST OK
 ```
