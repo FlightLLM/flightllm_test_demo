@@ -4,7 +4,6 @@
 
 - GPU: A100/V100
 - CUDA 11.7 and above
-- Pytorch 2.0.1 and above
 
 ## Introduction
 
@@ -25,6 +24,7 @@ The inputs and outputs of this profiling tool are in the `.compiler_output` fold
 conda create -n fpga python==3.11 -y
 conda activate fpga
 # The required dependency packages will be automatically installed
+# Here, we use vllm==0.1.7, transformers==4.34.0, torch==2.0.1. These are the versions of the libraries used for FPGA'24 paper submissions
 pip install -r requirements.txt
 ```
 
